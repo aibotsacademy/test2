@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beauty — WHERE SKINCARE BEGINS</title>
+    <meta name="description" content="Luxury aesthetic clinic offering premium skincare, devices, and recovery treatments. Editorial approach to clinical beauty.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" role="banner">
+        <p>Free Shipping Over $50! Returns are always on us.</p>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header" id="mainHeader">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="nav-links">
+                <a href="#shop">Shop</a>
+                <a href="#bestseller">Bestseller</a>
+                <a href="#sale">Sale</a>
+            </div>
+            
+            <div class="brand-wordmark">
+                <h1>beauty</h1>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="nav-icon" aria-label="Select currency">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 2C10 2 14 6 14 10C14 14 10 18 10 18" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 2C10 2 6 6 6 10C6 14 10 18 10 18" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="2" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </button>
+                <button class="nav-icon" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="13.5" y1="13.5" x2="17.5" y2="17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="nav-icon" aria-label="Account">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M4 18C4 14.6863 6.68629 12 10 12C13.3137 12 16 14.6863 16 18" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </button>
+                <button class="nav-icon cart-trigger" aria-label="Shopping cart">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 3H4.5L6.5 14H16L18 6H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="7" cy="17" r="1" fill="currentColor"/>
+                        <circle cx="15" cy="17" r="1" fill="currentColor"/>
+                    </svg>
+                    <span class="cart-badge" data-count="0">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Video Section -->
+    <section class="hero-video" id="hero">
+        <video class="hero-video__media" autoplay muted loop playsinline poster="">
+            <!-- <source src="assets/hero.webm" type="video/webm"> -->
+            <!-- <source src="assets/hero.mp4" type="video/mp4"> -->
+        </video>
+        <div class="hero-video__fallback"></div>
+        <div class="hero-video__overlay">
+            <div class="hero-video__content">
+                <div class="hero-wordmark">beauty</div>
+                <p class="hero-tagline">WHERE SKINCARE BEGINS</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
+                    <path d="M6 2V18M6 18L2 14M6 18L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Products Three Sections -->
+    <section class="feature-panels" id="topProducts">
+        <div class="feature-panel" data-color="peach">
+            <div class="feature-panel__visual">
+                <svg viewBox="0 0 300 400" class="product-illustration">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#F3D7C7;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#E8C4B0;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="150" cy="200" rx="80" ry="140" fill="url(#grad1)" opacity="0.6"/>
+                    <circle cx="150" cy="150" r="40" fill="#D9C7B8" opacity="0.8"/>
+                    <path d="M 130 120 Q 150 100 170 120" stroke="#111114" stroke-width="2" fill="none"/>
+                    <circle cx="150" cy="180" r="15" fill="rgba(255,255,255,0.9)"/>
+                </svg>
+            </div>
+            <div class="feature-panel__content">
+                <h2 class="feature-panel__title">Orchid</h2>
+                <p class="feature-panel__subtitle">Antioxidant Beauty Face Oil</p>
+                <button class="feature-panel__cta" data-product-id="0">SHOP NOW</button>
+            </div>
+        </div>
+
+        <div class="feature-panel" data-color="lavender">
+            <div class="feature-panel__visual">
+                <svg viewBox="0 0 300 400" class="product-illustration">
+                    <defs>
+                        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D7D2F6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#C5BEE8;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="120" y="100" width="60" height="180" rx="30" fill="url(#grad2)" opacity="0.7"/>
+                    <circle cx="150" cy="90" r="20" fill="rgba(255,255,255,0.9)"/>
+                    <circle cx="140" cy="250" r="5" fill="#D7D2F6" opacity="0.5"/>
+                    <circle cx="160" cy="270" r="4" fill="#D7D2F6" opacity="0.6"/>
+                    <circle cx="155" cy="290" r="3" fill="#D7D2F6" opacity="0.7"/>
+                </svg>
+            </div>
+            <div class="feature-panel__content">
+                <h2 class="feature-panel__title">Bakuchiol</h2>
+                <p class="feature-panel__subtitle">Smoothing serum</p>
+                <button class="feature-panel__cta" data-product-id="1">SHOP NOW</button>
+            </div>
+        </div>
+
+        <div class="feature-panel" data-color="sage">
+            <div class="feature-panel__visual">
+                <svg viewBox="0 0 300 400" class="product-illustration">
+                    <defs>
+                        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D7E9E1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#C2D9CE;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="150" cy="180" rx="90" ry="110" fill="url(#grad3)" opacity="0.6"/>
+                    <circle cx="135" cy="150" r="8" fill="#111114" opacity="0.8"/>
+                    <circle cx="165" cy="150" r="8" fill="#111114" opacity="0.8"/>
+                    <path d="M 140 180 Q 150 190 160 180" stroke="#111114" stroke-width="2" fill="none" opacity="0.6"/>
+                    <ellipse cx="150" cy="220" rx="30" ry="15" fill="rgba(255,255,255,0.8)"/>
+                </svg>
+            </div>
+            <div class="feature-panel__content">
+                <h2 class="feature-panel__title">Eye Anti-Aging</h2>
+                <p class="feature-panel__subtitle">Corrective eye cream — Green tea</p>
+                <button class="feature-panel__cta" data-product-id="2">SHOP NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shoppable Lifestyle Video -->
+    <section class="lifestyle-shoppable" id="lifestyleVideo">
+        <div class="lifestyle-shoppable__media">
+            <video class="lifestyle-video" autoplay muted loop playsinline>
+                <!-- <source src="assets/lifestyle.webm" type="video/webm"> -->
+                <!-- <source src="assets/lifestyle.mp4" type="video/mp4"> -->
+            </video>
+            <div class="lifestyle-video__fallback"></div>
+        </div>
+        <div class="floating-product-cards" id="floatingCards">
+            <!-- Cards will be populated by JS -->
+        </div>
+    </section>
+
+    <!-- Bestsellers Carousel -->
+    <section class="bestsellers-section" id="bestseller">
+        <div class="section-header">
+            <h2 class="section-title">Our Bestsellers</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="bestsellersCarousel">
+                <!-- Products will be populated by JS -->
+            </div>
+            <button class="carousel-control carousel-control--next" aria-label="Next products">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="carousel-progress">
+            <div class="carousel-progress__bar"></div>
+        </div>
+        <div class="section-cta">
+            <a href="#products" class="view-all-link">VIEW ALL</a>
+        </div>
+    </section>
+
+    <!-- Product Grid with Filters -->
+    <section class="product-grid-section" id="products">
+        <div class="product-grid-header">
+            <div class="filter-pills" role="group" aria-label="Product categories">
+                <button class="filter-pill active" data-category="all">All</button>
+                <button class="filter-pill" data-category="Skincare">Skincare</button>
+                <button class="filter-pill" data-category="Devices">Devices</button>
+                <button class="filter-pill" data-category="Recovery">Recovery</button>
+                <button class="filter-pill" data-category="Bundles">Bundles</button>
+                <button class="filter-pill" data-category="Membership">Membership</button>
+            </div>
+            <div class="sort-controls">
+                <label for="sortSelect" class="visually-hidden">Sort products</label>
+                <select id="sortSelect" class="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price Low → High</option>
+                    <option value="price-high">Price High → Low</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be populated by JS -->
+        </div>
+    </section>
+
+    <!-- Multi-Category Slider -->
+    <section class="category-slider-section" id="categorySlider">
+        <div class="segmented-control" role="tablist" aria-label="Product categories">
+            <button class="segment active" role="tab" aria-selected="true" data-category="Skincare" id="tab-skincare">Skincare</button>
+            <button class="segment" role="tab" aria-selected="false" data-category="Devices" id="tab-devices">Devices</button>
+            <button class="segment" role="tab" aria-selected="false" data-category="Recovery" id="tab-recovery">Recovery</button>
+            <button class="segment" role="tab" aria-selected="false" data-category="Bundles" id="tab-bundles">Bundles</button>
+            <button class="segment" role="tab" aria-selected="false" data-category="Membership" id="tab-membership">Membership</button>
+        </div>
+        <div class="category-carousel-wrapper">
+            <button class="category-nav category-nav--prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="category-carousel" id="categoryCarousel" role="tabpanel">
+                <!-- Slides will be populated by JS -->
+            </div>
+            <button class="category-nav category-nav--next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="pagination-dots" id="paginationDots">
+            <!-- Dots will be populated by JS -->
+        </div>
+    </section>
+
+    <!-- Interactive Face Hotspots -->
+    <section class="face-hotspots-section" id="faceHotspots">
+        <div class="face-container">
+            <svg class="face-illustration" viewBox="0 0 400 500" aria-labelledby="faceTitle">
+                <title id="faceTitle">Interactive face diagram showing skincare benefits</title>
+                <defs>
+                    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#F0E7FF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#F3D7C7;stop-opacity:0.8" />
+                    </linearGradient>
+                </defs>
+                <!-- Face outline -->
+                <ellipse cx="200" cy="250" rx="120" ry="160" fill="url(#skinGrad)" opacity="0.3"/>
+                <!-- Eyes -->
+                <ellipse cx="165" cy="220" rx="20" ry="12" fill="rgba(15,15,20,0.1)"/>
+                <ellipse cx="235" cy="220" rx="20" ry="12" fill="rgba(15,15,20,0.1)"/>
+                <!-- Nose -->
+                <path d="M 200 240 L 200 270 M 190 275 Q 200 278 210 275" stroke="rgba(15,15,20,0.15)" stroke-width="2" fill="none"/>
+                <!-- Mouth -->
+                <path d="M 175 310 Q 200 320 225 310" stroke="rgba(15,15,20,0.15)" stroke-width="2" fill="none"/>
+                <!-- Cheeks highlight -->
+                <circle cx="150" cy="260" r="25" fill="rgba(243,215,199,0.4)"/>
+                <circle cx="250" cy="260" r="25" fill="rgba(243,215,199,0.4)"/>
+            </svg>
+            
+            <!-- Hotspots -->
+            <button class="hotspot" data-hotspot="glow" style="top: 52%; left: 30%;" aria-label="Learn about radiant skin glow">
+                <span class="hotspot-icon">+</span>
+            </button>
+            <button class="hotspot" data-hotspot="eye" style="top: 44%; left: 58%;" aria-label="Learn about eye renewal">
+                <span class="hotspot-icon">+</span>
+            </button>
+            <button class="hotspot" data-hotspot="barrier" style="top: 62%; left: 50%;" aria-label="Learn about barrier repair">
+                <span class="hotspot-icon">+</span>
+            </button>
+        </div>
+        
+        <!-- Info Cards -->
+        <div class="hotspot-info" id="hotspotGlow" hidden>
+            <button class="hotspot-close" aria-label="Close">×</button>
+            <h3>Radiant Skin Glow</h3>
+            <p>Daily hydration keeps cheeks soft, plump, and glowing.</p>
+            <p class="hotspot-product">Recommended: <strong>Orchid Face Oil</strong></p>
+        </div>
+        
+        <div class="hotspot-info" id="hotspotEye" hidden>
+            <button class="hotspot-close" aria-label="Close">×</button>
+            <h3>Eye Renewal</h3>
+            <p>Depuffs and brightens with peptides + green tea.</p>
+            <p class="hotspot-product">Recommended: <strong>Eye Anti-Aging Cream</strong></p>
+        </div>
+        
+        <div class="hotspot-info" id="hotspotBarrier" hidden>
+            <button class="hotspot-close" aria-label="Close">×</button>
+            <h3>Barrier Repair</h3>
+            <p>Calms redness and reinforces the skin barrier.</p>
+            <p class="hotspot-product">Recommended: <strong>Recovery Balm</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-newsletter">
+                <h3>Stay Connected</h3>
+                <p>Receive expert skincare tips and exclusive offers.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="emailInput" class="visually-hidden">Email address</label>
+                    <input 
+                        type="email" 
+                        id="emailInput" 
+                        placeholder="Your email address" 
+                        required
+                        aria-required="true"
+                    >
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Clinic</h4>
+                    <a href="#contact">Contact</a>
+                    <a href="#locations">Locations</a>
+                    <a href="#appointments">Book Appointment</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="#shipping">Shipping</a>
+                    <a href="#returns">Returns</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#accessibility">Accessibility</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Social</h4>
+                    <a href="#instagram">Instagram</a>
+                    <a href="#tiktok">TikTok</a>
+                    <a href="#youtube">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 beauty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-overlay"></div>
+        <div class="cart-panel" role="dialog" aria-labelledby="cartTitle">
+            <div class="cart-header">
+                <h2 id="cartTitle">Your Cart</h2>
+                <button class="cart-close" aria-label="Close cart">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be populated by JS -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span class="cart-total-amount">$0.00</span>
+                </div>
+                <button class="cart-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
