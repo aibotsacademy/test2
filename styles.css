@@ -358,13 +358,16 @@ a {
 
 .feature-panel__visual {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto 2rem;
 }
 
 .product-illustration {
     width: 100%;
+    max-width: 600px;  /* Control the actual image size */
     height: auto;
+    margin: 0 auto;
+    display: block;
     filter: drop-shadow(0 20px 40px rgba(15,15,20,0.1));
 }
 
