@@ -1413,17 +1413,29 @@ a {
     }
 }
 
+
 @media (min-width: 1024px) {
     .feature-panel {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
+        align-items: center;  /* ADD THIS */
     }
     
     .feature-panel:nth-child(even) .feature-panel__visual {
         order: 2;
     }
+    
+    /* ADD THIS NEW RULE */
+    .feature-panel__visual {
+        max-width: none;
+        width: 100%;
+    }
+    
+    .product-illustration {
+        max-width: 500px;  /* Adjust this size as needed */
+        width: 100%;
+    }
 }
-
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     *,
