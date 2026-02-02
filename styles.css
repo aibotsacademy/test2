@@ -1412,31 +1412,24 @@ a {
         grid-template-columns: 1.5fr 1fr;
     }
 }
-
-
+/* FORCE FIX FOR DESKTOP IMAGES */
 @media (min-width: 1024px) {
-    .feature-panel {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        align-items: center;  /* ADD THIS */
-    }
-    
-    .feature-panel:nth-child(even) .feature-panel__visual {
-        order: 2;
-    }
-    
-    /* ADD THIS NEW RULE */
     .feature-panel__visual {
-        max-width: none;
-        width: 100%;
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-height: 400px !important;
     }
     
     .product-illustration {
-        max-width: 500px;  /* Adjust this size as needed */
-        width: 100%;
+        display: block !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        height: auto !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
-}
-/* Reduced Motion */
+}/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
