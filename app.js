@@ -698,6 +698,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.cart-trigger').addEventListener('click', toggleCart);
     document.querySelector('.cart-close').addEventListener('click', toggleCart);
     document.querySelector('.cart-overlay').addEventListener('click', toggleCart);
+
+    // Cart checkout → navigate to shopping-cart.html
+    document.querySelector('.cart-checkout').addEventListener('click', () => {
+        if (cart.length === 0) {
+            showToast('Your cart is empty');
+            return;
+        }
+        window.location.href = 'shopping-cart.html';
+    });
     
     // ESC to close cart
     document.addEventListener('keydown', (e) => {
